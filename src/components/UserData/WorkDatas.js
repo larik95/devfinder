@@ -32,7 +32,7 @@ const WorkDatasContent = styled.div`
   margin: 1.5rem 0;
   @media screen and (max-width: 750px) {
     padding: 1rem 1.5rem;
-    width: 360px;
+    width: 340px;
     transform: translateX(-5rem);
   }
 `;

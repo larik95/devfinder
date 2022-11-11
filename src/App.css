@@ -49,13 +49,14 @@
     max-width: 400px;
     scale: 0.9;
     transform: translateY(0%);
+    padding: 1rem;
   }
 
   .App {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 450px;
   }
   
 }
