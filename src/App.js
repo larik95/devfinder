@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import UserData from "./components/UserData";
 
 function App() {
+  //CHANGE THEME 
+  const toggleTheme = () => {
+  const app = document.querySelector(".App");
+  app.classList.toggle("dark")
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App">
+    <div className="content">
+    <Header toggleTheme={toggleTheme}/>
+    <Search />
     </div>
+  </div>
   );
 }
 

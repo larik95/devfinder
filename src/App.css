@@ -1,38 +1,61 @@
+:root {
+  /*FONT*/
+  --font-f: "Space Mono", monospace;
+  --weight4: 400;
+  --weight7: 700;
+
+  /*LIGHT MODE*/
+  --bg: #f6f8ff;
+  --theme-btn: #4b6a98;
+  --card: #fefefe;
+  --txtNorm: #697c9a;
+  --txtBolded: #2b3442;
+  --img-btn: url(../src/assets/IconMoon.svg);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .App {
-  text-align: center;
+  font-family: var(--font-f);
+  background-color: var(--bg);
+  height: 100%;
+  color: var(--txtNorm) ;
+  
+  
+}
+.dark {
+  /*DARK MODE*/
+  --bg: #141d2f;
+  --theme-btn: #fff;
+  --card: #1e2a47;
+  --txtNorm: #fff;
+  --txtBolded: #fff;
+  --img-btn: url(../src/assets/icon-sun.svg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  transform: translateY(15%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 750px) {
+  .content {
+    max-width: 400px;
+    scale: 0.9;
+    transform: translateY(0%);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
